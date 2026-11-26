@@ -1,3 +1,4 @@
+
 # Backup archives
 backups/
 *.tar.gz
@@ -9,8 +10,13 @@ logs/
 # Temporary restore directory
 restore-test/
 
-# AWS credential/config directories if accidentally copied here
+# AWS credential/config directories
 .aws/
+
+# Sensitive files
+.env
+.env.*
+*.pem
 
 # Editor/OS files
 .vscode/
