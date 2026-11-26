@@ -1,1 +1,2 @@
+Linux Backup Project - Notes
 This is a sample report file for backup testing.
