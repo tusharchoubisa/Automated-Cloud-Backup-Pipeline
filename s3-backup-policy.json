@@ -1,3 +1,4 @@
+
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -5,7 +6,7 @@
       "Sid": "ListBackupBucket",
       "Effect": "Allow",
       "Action": "s3:ListBucket",
-      "Resource": "arn:aws:s3:::kavya-linux-backup-2026"
+      "Resource": "arn:aws:s3:::tushar-simple-backup-2026"
     },
     {
       "Sid": "ManageBackupObjects",
@@ -14,7 +15,7 @@
         "s3:PutObject",
         "s3:GetObject"
       ],
-      "Resource": "arn:aws:s3:::kavya-linux-backup-2026/*"
+      "Resource": "arn:aws:s3:::tushar-simple-backup-2026/*"
     }
   ]
 }
