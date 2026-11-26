@@ -1,37 +1,43 @@
 # Automated Cloud Backup Pipeline
 
 ## Project Overview
-This project automates the process of creating backups of local files and uploading them to Amazon S3 using a Bash script.
+This project automates the process of creating compressed backups of local files using a Bash script and uploading them to Amazon S3 using AWS CLI.
 
 ## Tools & Technologies
 - Linux
 - Bash Scripting
 - AWS CLI
 - Amazon S3
-- IAM
-- Cron
 - Git & GitHub
 
 ## Project Structure
-- `backup.sh` – Automates backup creation and S3 upload.
+- `backup.sh` – Bash script for creating and uploading backups.
 - `source/` – Contains sample files for backup.
-- `s3-backup-policy.json` – IAM policy for S3 access.
+- `screenshots/` – Contains project execution and verification screenshots.
+- `s3-backup-policy.json` – Reference IAM policy file.
 - `.gitignore` – Excludes unnecessary files.
 
 ## Key Features
 - Creates timestamped backup archives.
-- Uploads backups to Amazon S3.
-- Verifies successful uploads.
-- Retries failed uploads.
-- Maintains the latest 7 local backups.
-- Logs backup activity.
+- Uploads backup files to Amazon S3.
+- Verifies successful S3 uploads.
+- Maintains the latest 7 local backup archives.
+- Records backup activity in log files.
+- Supports backup restoration and verification.
+
+## Testing & Results
+- Successfully executed the backup script in AWS CloudShell.
+- Verified the backup archive in Amazon S3.
+- Downloaded and extracted the backup archive.
+- Compared restored files with the original source files.
 
 ## Learning Outcomes
 - Practiced Linux commands and Bash scripting.
-- Learned basic AWS S3 and IAM concepts.
-- Understood backup automation.
+- Learned AWS CLI and Amazon S3 operations.
+- Understood backup creation, upload, and restoration.
+- Practiced basic cloud backup workflow.
 
 ## Original Project Credit
 Inspired by: https://github.com/vemurikavya/automated-cloud-backup-pipeline
 
-This repository is an adapted learning project. Configuration and testing will be done independently.
+This is an adapted learning project. The script was modified and tested independently.
